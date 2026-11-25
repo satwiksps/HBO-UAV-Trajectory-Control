@@ -1,68 +1,35 @@
-## Dynamic PD Tuning for Accurate and Robust UAV Trajectory Tracking using Heteroscedatic Bayesian Optimization
+# Propeller Arm Control Lab
 
-A MATLAB and Simulink framework using Heteroscedastic Bayesian Optimization (HBO) to dynamically tune a 12-parameter Cascaded PD controller. This architecture is designed to eliminate integral windup and actuator chatter, ensuring highly precise and robust 3D trajectory tracking for underactuated quadrotors.
+A single-axis propeller arm with an Arduino Uno, MPU6050 and a Python dashboard. The Uno closes the angle loop in real time. The dashboard runs experiments, records the response and uses heteroscedastic Bayesian optimisation (HBO) to choose PID gains to test on the bench.
 
-## System Architecture As Seen In Simulink
+<table>
+  <tr>
+    <td align="center"><a href="docs/images/propeller-arm.jpg"><img src="docs/images/propeller-arm.jpg" alt="Bench-mounted propeller arm during an angle hold" width="270"></a><br><strong>Propeller arm</strong></td>
+    <td align="center"><a href="docs/images/dashboard.jpg"><img src="docs/images/dashboard.jpg" alt="PID dashboard showing measured angle, target and ESC pulse from hardware" width="380"></a><br><strong>Dashboard during a hardware run</strong></td>
+  </tr>
+</table>
 
-![](figures/simulink_main_canvas.jpg)
+In five matched hardware runs at −9°, adding integral action reduced mean absolute hold error from **2.50° to 1.40°**. The tuning workflow proposes candidate gains and retests them against a manual baseline. [See the measurements and example data](docs/experiments.md).
 
-## Optimisation Algorithm Block Diagram
+## Try it
 
-![](figures/optimisation_algorithim_schematic_diagram.jpg)
+From the repository root, using Python 3.12 and PowerShell:
 
-## Visual Results
-
-| Elliptical | Spiral | Four-leaf Clover |
-| :---: | :---: | :---: |
-| ![](figures/elliptical_path_error_plot.jpg) | ![](figures/spiral_path_error_plot.jpg) | ![](figures/fourleafclover_path_error_plot.jpg) |
-| ![](figures/elliptical_control_effort.jpg) | ![](figures/spiral_control_effort.jpg) | ![](figures/fourleafclover_control_effort.jpg) |
-
-## Prerequisites
-
-Ensure the following software and toolboxes are installed on your system:
-* MATLAB
-* Simulink
-* Statistics and Machine Learning Toolbox
-* Optimization Toolbox
-
-## Installation Instructions
-
-Run the following commands in your terminal to clone the repository to your local machine:
-
-```bash
-git clone https://github.com/satwiksps/HBO-UAV-Trajectory-Control.git
-cd HBO-UAV-Trajectory-Control
+```powershell
+cd hardware
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe dashboard.py --sim
 ```
 
-## Prerequisites
+Practice mode works without an Arduino. For the physical rig, follow the build and calibration guides before arming.
 
-Ensure the following software and toolboxes are installed on your system:
-* MATLAB
-* Simulink
-* Statistics and Machine Learning Toolbox
-* Global Optimization Toolbox
+| Guide | Covers |
+| --- | --- |
+| [Hardware](docs/hardware.md) | Parts, mechanical assembly, wiring and bench checks |
+| [Setup and calibration](docs/setup.md) | Firmware upload, three-pose calibration, first hold and troubleshooting |
+| [Controller and optimiser](docs/control.md) | PID, tilt estimation, scoring, HBO and the USB protocol |
+| [Experiments](docs/experiments.md) | Matched tests, results, example data and plot export |
+| [MATLAB/Simulink model](docs/simulation.md) | Running the quadrotor simulation in this repository |
 
-## Run Instructions
-
-1. Open MATLAB.
-
-2. Navigate to the cloned repository folder within the MATLAB environment.
-
-3. Launch the machine learning optimization sequence. This script will execute the Heteroscedastic Bayesian Optimization loop and load the optimal PD gains (`Kp_pos`, `Kd_pos`, `Kp_ang`, `Kd_ang`) into the base workspace:
-
-```matlab
-run('run_optimisation.m')
-```
-
-4. Once the optimization is complete, execute the results script. This will run the final closed-loop Simulink simulation using the optimized parameters, extract the kinematic data, print performance metrics to the console, and generate the 3D trajectory and control effort figures:
-
-```matlab
-run('plot_results.m')
-```
-
-5. To visually inspect the physical flight simulation architecture and the Cascaded PD controller blocks, open the provided Simulink model:
-
-```matlab
-open_system('unmanned_aerial_vehicle_model.slx')
-```
-
+**Demo video:** Coming soon!

@@ -1,0 +1,67 @@
+source,elapsed_s,event,detail
+HARDWARE,0.0,Session connected,
+HARDWARE,0.048,Calibration applied,
+HARDWARE,35.211,Arm requested,
+HARDWARE,37.405,Baseline started,
+HARDWARE,60.31,Trial complete,1: 3.797
+HARDWARE,84.321,Trial complete,2: 7.930
+HARDWARE,110.248,Trial complete,3: 4.989
+HARDWARE,138.57,Trial complete,4: 9.056
+HARDWARE,164.598,Trial complete,5: 4.092
+HARDWARE,164.598,Experiment complete,
+HARDWARE,193.13,Arm requested,
+HARDWARE,196.817,HBO started,
+HARDWARE,221.63,Trial complete,6: 18.211
+HARDWARE,245.274,Trial complete,7: 8.093
+HARDWARE,272.244,Trial complete,8: 6.874
+HARDWARE,299.369,Trial complete,9: 15.576
+HARDWARE,327.794,Trial complete,10: 10.913
+HARDWARE,369.459,Trial complete,11: 10.124
+HARDWARE,396.164,Trial complete,12: 6.483
+HARDWARE,423.579,Trial complete,13: 19.632
+HARDWARE,450.221,Trial complete,14: 6.841
+HARDWARE,477.863,Trial complete,15: 6.096
+HARDWARE,506.16,Trial complete,16: 10.254
+HARDWARE,535.645,Trial complete,17: 11.246
+HARDWARE,566.208,Trial complete,18: 8.065
+HARDWARE,598.676,Trial complete,19: 23.752
+HARDWARE,628.021,Trial complete,20: 15.619
+HARDWARE,671.147,Trial complete,21: 18.950
+HARDWARE,700.944,Trial complete,22: 7.473
+HARDWARE,730.022,Trial complete,23: 9.012
+HARDWARE,759.367,Trial complete,24: 12.554
+HARDWARE,787.306,Trial complete,25: 9.583
+HARDWARE,813.729,Trial complete,26: 10.676
+HARDWARE,846.167,Trial complete,27: 15.925
+HARDWARE,875.573,Trial complete,28: 14.819
+HARDWARE,905.293,Trial complete,29: 12.333
+HARDWARE,935.886,Trial complete,30: 13.364
+HARDWARE,978.809,Trial complete,31: 8.467
+HARDWARE,1011.872,Trial complete,32: 10.620
+HARDWARE,1041.028,Trial complete,33: 8.211
+HARDWARE,1069.731,Trial complete,34: 9.965
+HARDWARE,1098.325,Trial complete,35: 10.951
+HARDWARE,1128.825,Trial complete,36: 12.795
+HARDWARE,1160.966,Trial complete,37: 13.275
+HARDWARE,1189.716,Trial complete,38: 23.860
+HARDWARE,1219.856,Trial complete,39: 11.160
+HARDWARE,1249.013,Trial complete,40: 10.564
+HARDWARE,1291.921,Trial complete,41: 19.786
+HARDWARE,1323.061,Trial complete,42: 10.598
+HARDWARE,1352.922,Trial complete,43: 9.798
+HARDWARE,1382.672,Trial complete,44: 22.921
+HARDWARE,1382.672,HBO pick,"(0.84261, 0.31762, 0.14127)"
+HARDWARE,1524.597,Arm requested,
+HARDWARE,1529.99,Repeat started,
+HARDWARE,1553.144,Trial complete,45: 6.689
+HARDWARE,1571.27,Safety cutoff,PID launch did not reach the target
+HARDWARE,2536.614,Arm requested,
+HARDWARE,2542.483,Hold started,0.0
+HARDWARE,2610.168,STOP,
+HARDWARE,2694.674,Arm requested,
+HARDWARE,2696.411,Hold started,0.0
+HARDWARE,2742.287,Added load,
+HARDWARE,2749.252,Poke,
+HARDWARE,2752.294,Poke,
+HARDWARE,2754.317,Poke,
+HARDWARE,2801.546,STOP,

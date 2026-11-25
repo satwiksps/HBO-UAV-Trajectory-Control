@@ -1,0 +1,38 @@
+source,elapsed_s,event,detail
+HARDWARE,0.359,Calibration applied,
+HARDWARE,5.062,Arm requested,
+HARDWARE,5.265,Matched test,1 · PID
+HARDWARE,5.265,Hold started,"-9° · PID · gains (0.55, 0.13, 0.25)"
+HARDWARE,24.703,Pulse dip requested,PID · command −4 µs for 2 s
+HARDWARE,24.719,Pulse dip accepted,
+HARDWARE,41.703,Matched test result,1 · PID · dip requested
+HARDWARE,41.703,STOP,
+HARDWARE,46.062,Arm requested,
+HARDWARE,46.265,Matched test,2 · PD
+HARDWARE,46.265,Hold started,"-9° · PD · gains (0.55, 0, 0.25)"
+HARDWARE,64.265,Pulse dip requested,PD · command −4 µs for 2 s
+HARDWARE,64.281,Pulse dip accepted,
+HARDWARE,81.265,Matched test result,2 · PD · dip requested
+HARDWARE,81.265,STOP,
+HARDWARE,85.625,Arm requested,
+HARDWARE,85.828,Matched test,3 · PID
+HARDWARE,85.828,Hold started,"-9° · PID · gains (0.55, 0.13, 0.25)"
+HARDWARE,103.828,Pulse dip requested,PID · command −4 µs for 2 s
+HARDWARE,103.844,Pulse dip accepted,
+HARDWARE,120.828,Matched test result,3 · PID · dip requested
+HARDWARE,120.828,STOP,
+HARDWARE,125.187,Arm requested,
+HARDWARE,125.39,Matched test,4 · PID
+HARDWARE,125.39,Hold started,"-9° · PID · gains (0.55, 0.13, 0.25)"
+HARDWARE,143.39,Pulse dip requested,PID · command −4 µs for 2 s
+HARDWARE,143.406,Pulse dip accepted,
+HARDWARE,160.39,Matched test result,4 · PID · dip requested
+HARDWARE,160.39,STOP,
+HARDWARE,164.75,Arm requested,
+HARDWARE,164.953,Matched test,5 · PD
+HARDWARE,164.953,Hold started,"-9° · PD · gains (0.55, 0, 0.25)"
+HARDWARE,183.312,Pulse dip requested,PD · command −4 µs for 2 s
+HARDWARE,183.328,Pulse dip accepted,
+HARDWARE,200.312,Matched test result,5 · PD · dip requested
+HARDWARE,200.312,STOP,
+HARDWARE,200.672,STOP,

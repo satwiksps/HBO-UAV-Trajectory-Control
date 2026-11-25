@@ -1,0 +1,43 @@
+{
+  "source": "HARDWARE",
+  "hardware_test": {
+    "target_deg": -9,
+    "sequence": [
+      "PID pilot",
+      "PD",
+      "PID",
+      "PID",
+      "PD"
+    ],
+    "dip_start_window_s": [
+      18,
+      24
+    ],
+    "dip_us": -4,
+    "post_dip_s": 15,
+    "host_abort_deg": 5,
+    "diagnostic_trim_us": 1140
+  },
+  "calibration": {
+    "zero_axis": [
+      0.994136166894412,
+      0.0017886070040159631,
+      -0.10812068515076528
+    ],
+    "tangent": [
+      -0.0038441926916157085,
+      0.999815751571841,
+      -0.018806517258229575
+    ],
+    "bias": [
+      -2089.483870967742,
+      496.35483870967744,
+      -84.16129032258064
+    ],
+    "lower": -33.6,
+    "upper": 26.0,
+    "hover": 1140,
+    "cap": 1300,
+    "operating_limit": 15.2
+  }
+}
