@@ -1,4 +1,4 @@
-# Propeller Arm Control Lab
+# HBO-Based PID Tuning for a UAV Propeller Arm
 
 A single-axis propeller arm with an Arduino Uno, MPU6050 and a Python dashboard. The Uno closes the angle loop in real time. The dashboard runs experiments, records the response and uses heteroscedastic Bayesian optimisation (HBO) to choose PID gains to test on the bench.
 

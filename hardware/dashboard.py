@@ -208,7 +208,7 @@ class Dashboard(Q.QMainWindow):
         title_block.setSpacing(0)
         title = label("Propeller arm", "display")
         title_block.addWidget(title)
-        title_block.addWidget(label("PID CONTROL LAB", "eyebrow"))
+        title_block.addWidget(label("HBO PID TUNING", "eyebrow"))
         head.addLayout(title_block)
         head.addStretch()
         self.source = label("SIMULATION" if self.simulated else "HARDWARE")
